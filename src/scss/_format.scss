@@ -1,0 +1,94 @@
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?ti9k2d');
+  src:  url('../fonts/icomoon.eot?ti9k2d#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?ti9k2d') format('truetype'),
+    url('../fonts/icomoon.woff?ti9k2d') format('woff'),
+    url('../fonts/icomoon.svg?ti9k2d#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ********************************************************
+	共通初期化CSS
+******************************************************** */
+html,body,div,header,footer,article,section,aside,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,figure
+	{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	outline:  none;
+}
+.mac html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td
+	{
+}
+body {
+	-webkit-text-size-adjust: 100%;
+	line-height: 100%;
+}
+ol,ul,li{
+	list-style: none;
+}
+blockquote,q {
+}
+blockquote:before,blockquote:after,q:before,q:after {
+}
+img{
+	-webkit-backface-visibility: hidden;
+	-ms-interpolation-mode: bicubic;
+	vertical-align: bottom;
+}
+
+ins {
+	text-decoration: none;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:focus {
+	outline: 0;
+}
+
+caption,th,td {
+	text-align: left;
+	font-weight: normal;
+}
+
+a {
+}
+
+.clear, div .clear{
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	text-indent: -9999px;
+	clear:both;
+}
+
+/*---clearFix---*/
+.clearFix{
+	zoom: 1;
+}
+
+.clearFix:after{
+	content: ".";
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+@media print{ 
+body{
+zoom: 60%;
+}
+}
