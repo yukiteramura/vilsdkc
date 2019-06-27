@@ -395,8 +395,12 @@ a{
 				@include fz(14);
 			}
 			span{
+				@include fz(22);
 				color: $pink;
 				font-weight: bold;
+				@include max-screen($SP01blake){
+					@include fz(16);
+				}
 			}
 		}
 	}
