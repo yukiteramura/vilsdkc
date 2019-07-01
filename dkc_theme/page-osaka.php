@@ -54,7 +54,7 @@
 				<section class="mv">
 					<h1> <span class="logo"><img src="<?php echo get_bloginfo("template_directory") ?>/images/osaka/img_logo.svg" alt="RENT A STUDIO Avenue"></span> <span class="ptn01">VILS DANCE KIDS CLUB<br>
         ビルズダンスキッズクラブ大阪校</span> </h1>
-					<p>心斎橋駅・四ツ橋駅より徒歩5分!<br>
+					<p>心斎橋駅・四ツ橋駅より徒歩3分!<br>
 随時無料体験レッスン実施中！<br>予約無しでOK!<br class="sp">当日は動きやすい服装と靴をご持参ください</p>
 				</section>
 				<section class="catch">
@@ -113,29 +113,29 @@
 							<p class="scheduleArea__list__fig"><a href="http://www.vils-dkc.com/instructor/aya-vetty/" target="_blank"><img src="<?php echo get_bloginfo("template_directory") ?>/images/osaka/img_aya.png" alt="aya"></a>
 							</p>
 							<div>
-                <p class="scheduleArea__list__name">AYA</p>
+                <p class="scheduleArea__list__name">インストラクター：AYA先生</p>
 							<p class="scheduleArea__list__time">毎週木曜日<br>【ドールクラス】<br>16:30~(50分クラス)</p>
 							<p class="scheduleArea__list__txt">プリキュアやアイドルのダンスを中心に<br class="sp">女の子が可愛く夢中になれるレッスンをしています！<br><br>
 対象年齢 3歳〜小学生まで</p>
-                <a href="http://www.vils-dkc.com/instructor/aya-vetty/" target="_blank" class="scheduleArea__list__btn">プロフィールを見る</a>
+                <a href="http://www.vils-dkc.com/instructor/aya-vetty/" target="_blank" class="scheduleArea__list__btn">AYA先生のプロフィールを見る</a>
 					</div>
 						</li>
 						<li>
 							<p class="scheduleArea__list__fig"><a href="http://www.vils-dkc.com/instructor/mayu-venom/" target="_blank"><img src="<?php echo get_bloginfo("template_directory") ?>/images/osaka/img_mayu.png" alt="MAYU"></a>
 							</p>
 							<div>
-                <p class="scheduleArea__list__name">MAYU</p>
-							<p class="scheduleArea__list__time">毎週木曜日<br>【リトルホップクラス】<br>17:20〜(50分クラス)</p>
+                <p class="scheduleArea__list__name">インストラクター：MAYU先生</p>
+							<p class="scheduleArea__list__time">毎週木曜日<br>【リトルヒップホップクラス】<br>17:20〜(50分クラス)</p>
 							<p class="scheduleArea__list__txt">リズム感とノリを重視した<br class="sp">楽しいリトルヒップホップクラス！<br><br>
 対象年齢 5歳〜小学校低学年まで</p>
-                <a href="http://www.vils-dkc.com/instructor/mayu-venom/" target="_blank" class="scheduleArea__list__btn">プロフィールを見る</a>
+                <a href="http://www.vils-dkc.com/instructor/mayu-venom/" target="_blank" class="scheduleArea__list__btn">MAYU先生のプロフィールを見る</a>
 							</div>
 						</li>
 					</ul>
 				</section>
 				<section class="systemArea fadein" id="system">
 					<h2 class="systemArea__ttl subTtl">System<span>料金</span></h2>
-					<p class="systemArea__txt">1レッスンは1500円（税別）<br> お月謝 4000円（税別）</p>
+					<p class="systemArea__txt">1レッスンは1500円（税別）<br> お月謝 4000円（税別）/月4回（1回1000円）</p>
 					<p class="systemArea__btnArea"><a href="http://www.vils-dkc.com/blog/?blog_category=%E5%A4%A7%E9%98%AA%E5%BF%83%E6%96%8E%E6%A9%8B" class="btn">ブログを見る</a>
 					</p>
 					<p class="systemArea__btnArea"><a href="http://www.vils-dkc.com/" class="btn">京都山科校のサイトはコチラ</a>
@@ -160,7 +160,7 @@
               <span>アールオースタジオ</span></h2>
 								<p>住所<br> 大阪府大阪市中央区西心斎橋１丁目16-7 サザンウエストビル7階<br> TEL:06-6539-0655
 								</p>
-								<p>心斎橋駅・四ツ橋駅より徒歩5分!<br>
+								<p>心斎橋駅・四ツ橋駅より徒歩3分!<br>
 アメリカ村内のイキナリステーキ、王将の前にあるmojoという服屋さんのビルの7階</p>
 							</div>
 						</div>
