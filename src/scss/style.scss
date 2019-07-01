@@ -103,16 +103,17 @@ a{
 			left: 0;
 			display: none;
 			@include max-screen($SP01blake){
+			background: url(../images/osaka/icon_vils.svg) center left no-repeat;
 				display: block;
 				background-size: contain;
 				width: 40%;
-				height: 60px;
-				position: fixed;
-				top: 0;
+				height: 50px;
+				top: 50%;
 				left: 10px;
+				margin-top: -25px;
 			}
 			@include max-screen($SP02blake){
-				width: 30%;
+				width: 15%;
 			}
 		}
 		.nav{
@@ -125,7 +126,7 @@ a{
 			}
 			li{
 				@include max-screen($SP01blake){
-					width: 60px;
+					width: 70px;
 				}
 				a{
 					color: $white;
@@ -138,7 +139,7 @@ a{
 						height: 60px;
 						position: relative;
 						@include fz(10);
-						padding-top: 45px;
+						padding-top: 40px;
 						box-sizing: border-box;
 						display: block;
 						text-align: center;
@@ -163,7 +164,7 @@ a{
 							background-position: center center;
 							background-repeat: no-repeat;
 							background-size: contain;
-							width: 30px;
+							width: 20px;
 							height: 30px;
 							position: absolute;
 							top: 10px;
@@ -222,7 +223,7 @@ a{
 	}
 	&.fixed{
 		height: 70px;
-		box-shadow: 3px 0 5px rgba(0,0,0,.2);
+		box-shadow: 3px 0 5px rgba(0,0,0,.3);
 		@include max-screen($SP01blake){
 			height: 60px;
 		}
@@ -271,19 +272,21 @@ a{
 }
 .btn{
 	background: $pink;
-	width: 400px;
-	height: 60px;
+	width: 480px;
+	height: 80px;
 	margin: 0 auto;
 	display: block;
 	color: $white;
 	@include fz(20);
+	font-weight: bold;
 	text-align: center;
-	line-height: 60px;
+	line-height: 80px;
 	border-radius: 10px;
 	transition: $base-transition;
 	position: relative;
+	box-shadow: 3px 0 5px rgba(0,0,0,.3);
 	@include max-screen($SP01blake){
-	  width: 90%;
+		width: 100%;
 		height: 60px;
 		line-height: 60px;
 		@include fz(20);
@@ -300,19 +303,22 @@ a{
 		background-size: contain;
 		content: "";
 		width: 35px;
-		height: 60px;
+		height: 80px;
 		position: absolute;
 		left: 40px;
-		top: 0
+		top: 0;
+			@include max-screen($SP01blake){
+				height: 60px;
+				}
 	}
 	&.mail{
-		background: #bf5c81;
+		background: #33bab1;
 		&:before{
 			background-image: url(../images/osaka/icon_mail.svg);
 		}
 	}
 	&.tel{
-		background: #bf5c81;
+		background: #33bab1;
 		&:before{
 			background-image: url(../images/osaka/icon_tel.svg);
 		}
@@ -395,12 +401,8 @@ a{
 				@include fz(14);
 			}
 			span{
-				@include fz(22);
 				color: $pink;
 				font-weight: bold;
-				@include max-screen($SP01blake){
-					@include fz(16);
-				}
 			}
 		}
 	}
@@ -418,11 +420,11 @@ a{
 }
 
 .scheduleArea{
-	background: #ffe5ee;
+	background: #cceeeb;
 	width: 100%;
 	padding: 80px 0;
 		@include max-screen($SP01blake){
-			padding: 40px 0;
+			padding: 60px 0;
 			box-sizing: border-box;
 		}
 	&__ttl{
@@ -448,12 +450,55 @@ a{
 					}
 				}
 			}
-			.scheduleArea__list__time{
-				@include fz(18);
+			div{
 				margin-left: 40px;
+				.scheduleArea__list__time{
+				@include fz(18);
+					font-weight: bold;
+				@include max-screen($SP01blake){
+					@include fz(18);
+					text-align: center;
+					margin: 0;
+				}
+			}
+        .scheduleArea__list__name{
+          color: $pink;
+				@include fz(24);
+					font-weight: bold;
+				@include max-screen($SP01blake){
+					@include fz(18);
+					text-align: center;
+					margin: 0;
+				}
+			}
+				.scheduleArea__list__txt{
+				@include fz(16);
+				margin-top: 20px;
 				@include max-screen($SP01blake){
 					text-align: center;
 					margin: 20px 0 0 0;
+					@include fz(14);
+				}
+			}
+        .scheduleArea__list__btn{
+          position: relative;
+          background: $pink;
+          width: 100%;
+          height: 50px;
+          text-align: center;
+          color: $white;
+          line-height: 50px;
+          border-radius: 50px;
+          display: block;
+          margin-top: 20px;
+          @include fz(16);
+          &:after{
+            @include arrow;
+          }
+        }
+				@include max-screen($SP01blake){
+					width: 90%;
+					margin: 20px auto 0;
 				}
 			}
 			&+li{
@@ -466,7 +511,7 @@ a{
 	width: 100%;
 	padding: 80px 0;
 	@include max-screen($SP01blake){
-		padding: 40px 0;
+		padding: 60px 0;
 		box-sizing: border-box;
 	}
 	&__txt{
@@ -476,8 +521,16 @@ a{
 	}
 	&__btnArea{
 		margin-top: 40px;
+		@include max-screen($SP01blake){
+			width: 90%;
+			margin: 40px auto 0;
+		}
 		&+.systemArea__btnArea{
 			margin-top: 20px;
+			@include max-screen($SP01blake){
+			width: 90%;
+			margin: 20px auto 0;
+		}
 		}
 		&+p{
 			margin-top: 20px;
@@ -486,6 +539,10 @@ a{
 		}
 		&.sp{
 				margin-top: 20px;
+			@include max-screen($SP01blake){
+			width: 90%;
+			margin: 20px auto 0;
+		}
 			}
 	}
 }
@@ -546,13 +603,25 @@ a{
 	}
 	&__btnArea{
 		margin-top: 40px;
+		@include max-screen($SP01blake){
+			width: 90%;
+			margin: 40px auto 0;
+		}
 		&+p{
 			margin-top: 20px;
 			text-align: center;
 			@include fz(14);
+			@include max-screen($SP01blake){
+			width: 90%;
+			margin: 20px auto 0;
+		}
 		}
 		&.sp{
 			margin-top: 20px;
+			@include max-screen($SP01blake){
+				width: 90%;
+				margin: 20px auto 0;
+			}
 		}
 	}
 }
@@ -569,6 +638,9 @@ a{
 	  .blog__list {
     max-width: 960px;
     margin: 80px auto 0;
+			@include max-screen($SP01blake){
+				margin: 40px auto 0;
+			}
 		&__item{
 			@include flex;
 			align-items: center;
@@ -608,7 +680,6 @@ a{
 			}
 		}
 		&__contents{
-			margin-top: 40px;
 			text-align: center;
 		}
 		&__data{
@@ -624,6 +695,13 @@ a{
 	&__btnArea{
 				margin-top: 40px;
 		}
+	.blog__list__contents__txt{
+				line-height: 2;
+				img{
+					width: 100%;
+					height: auto;
+				}
+			}
 }
 
 
@@ -638,13 +716,18 @@ a{
 -------------------------------*/
 #pageFooter{
 	width: 100%;
+	margin-top: 80px;
 	position: relative;
+	background: #33bab1;
+	@include max-screen($SP01blake){
+		margin-top: 50px;
+	}
 	#footerInner{
 		max-width: 980px;
 		margin: 0 auto;
-		padding: 40px 0;
+		padding: 60px 0;
 		text-align: center;
-		color: $bk;
+		color: $white;
 		@include fz(12);
 		@include max-screen($SP01blake){
 			padding: 20px 0;
@@ -686,8 +769,8 @@ a{
 					position: absolute;
 					width: 20px;
 					height: 20px;
-					border-top: 2px solid #332f3d;
-					border-right: 2px solid #332f3d;
+					border-top: 2px solid $pink;
+					border-right: 2px solid $pink;
 					transform: rotate(-45deg);
 					top: 15px;
 					bottom: 0;

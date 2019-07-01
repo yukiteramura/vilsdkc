@@ -198,6 +198,13 @@ text-align: center;
 #sp_about_area h3 img{
 width: 60px;
 }
+#sp_about_area p{
+    text-align: center;
+    font-size: 14px;
+    color: #ff59ab;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
 #sp_new_info_ul{
   padding: 16px 0;
   margin-top: 8px;
@@ -1027,6 +1034,13 @@ float: left;
 	#top_banner_ul li:nth-child(n+3){
 		margin-top: 15px;
 	}
+  #top_banner_ul li p{
+    text-align: center;
+    font-size: 24px;
+    color: #ff59ab;
+    font-weight: bold;
+    padding: 10px 0;
+  }
 #slide_area{
   padding: 0;
   height: 360px;
@@ -1646,4 +1660,11 @@ a.blog_category_list:hover{
 	#top_banner_ul li+li{
 		margin-top: 20px;
 	}
+  #top_banner_ul li p{
+    text-align: center;
+    font-size: 14px;
+    color: #ff59ab;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
 }

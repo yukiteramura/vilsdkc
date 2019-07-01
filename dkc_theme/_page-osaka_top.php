@@ -15,7 +15,7 @@
 	<!--20文字以内が好ましい-->
 	<meta property="og:description" content="大阪 西心斎橋・堀江のキッズスタジオ VILS DANCE KIDS CLUB ビルズダンスキッズクラブ大阪校"/>
 	<!--最適文字数 80~90-->
-	<meta property="og:url" content="https://www.vils-dkc.com/osaka/"/>
+	<meta property="og:url" content="http://www.vils-dkc.com/osaka_top/"/>
 	<meta property="og:site_name" content="VILS DANCE KIDS CLUB ビルズダンスキッズクラブ大阪校"/>
 	<!--サイト名やブランド情報-->
 	<!--推奨size w1200×h630-->
@@ -24,7 +24,7 @@
 	<meta name="twitter:card" content="summary_large_image"/>
 	<!--summaryにする場合は1:1の画像を別途用意-->
 	<!--<meta name="twitter:image" content="Twitter用の画像URL" /> summaryの場合の画像設定-->
-	<link rel="canonical" href="https://www.vils-dkc.com/osaka/">
+	<link rel="canonical" href="http://www.vils-dkc.com/osaka_top/">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/pages.css">
@@ -74,7 +74,7 @@
 					<ul class="blog__list">
 						<?php
 						$args = array(
-							'posts_per_page' => 1,
+							'posts_per_page' => 3,
 							'orderby' => 'date',
 							'order' => 'DESC',
 							'category_name' => '大阪心斎橋'
@@ -83,7 +83,25 @@
 						while ( $the_query->have_posts() ):
 							$the_query->the_post();
 						?>
-						<li class="blog__list__item">
+						<li class="blog__list__item<?php
+              // newマーク
+              $days = 7;  // 一週間表示
+              $now = date_i18n('U');  // 今の時間
+              $entry = get_the_time('U');  // 投稿日の時間
+              $day_term = date('U',($now - $entry)) / 86400;
+              if( $days > $day_term ){
+                  echo ' new';
+              }
+            ?>">
+							<figure class="blog__list__thumb">
+								<?php if (has_post_thumbnail()) : ?>
+								<!-- アイキャッチ画像 -->
+								<?php the_post_thumbnail('thumbnail'); ?>
+								<?php else : ?>
+								<!-- アイキャッチが設定されてないときの画像 -->
+								<img src="https://placehold.jp/300x300.png" alt="no-image"/>
+								<?php endif ; ?>
+							</figure>
 							<div class="blog__list__contents">
 								<p class="blog__list__ttl">
 									<?php the_title(); ?>
@@ -91,9 +109,6 @@
 								<time class="blog__list__date" datetime="<?php echo get_the_date( 'Y-m-d' ); ?>">
 									<?php echo get_the_date( 'Y.m.d' ); ?>
 								</time>
-								<div class="blog__list__contents__txt">
-								  <?php the_content(); ?>
-								</div>
 							</div>
 						</li>
 						<?php
