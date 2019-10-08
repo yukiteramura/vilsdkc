@@ -916,6 +916,55 @@ ul.dancer_list li:nth-child(even){
 ul.dancer_list li:nth-child(odd){
 
 }
+  #top_banner_ul{
+	max-width: 960px;
+	margin: 40px auto 0;
+	overflow: hidden;
+	padding-bottom: 4px;
+}
+	#top_banner_ul.inner{
+		max-width: 800px;
+	}
+#top_banner_ul li{
+	box-shadow: 0px 0px 2px 0px rgba(0,0,0,.4);
+	position: relative;
+	z-index: 999;
+}
+	#top_banner_ul.inner li a img{
+		width: 100%;
+	}
+#top_banner_ul li:nth-child(even){
+float: right;
+
+}
+#top_banner_ul li:nth-child(odd){
+float: left;
+
+}
+	#top_banner_ul li:nth-child(n+3){
+		margin-top: 15px;
+	}
+  #top_banner_ul li p{
+    text-align: center;
+    font-size: 24px;
+    color: #ff59ab;
+    font-weight: bold;
+    padding: 10px 0;
+  }
+    #footer_inner .innerBox{
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+  #footer_inner .innerBox .addArea{
+    width: 100%;
+  }
+  #footer_inner .innerBox .addArea .footer_tel{
+    font-size: 30px;
+  }
+  #footer_inner .innerBox .contactArea{
+    margin-top: 30px;
+    width: 100%;
+  }
 
 }
 
@@ -1006,41 +1055,6 @@ font-size: 0;
 	text-decoration: none;
 }
 	
-#top_banner_ul{
-	max-width: 960px;
-	margin: 40px auto 0;
-	overflow: hidden;
-	padding-bottom: 4px;
-}
-	#top_banner_ul.inner{
-		max-width: 800px;
-	}
-#top_banner_ul li{
-	box-shadow: 0px 0px 2px 0px rgba(0,0,0,.4);
-	position: relative;
-	z-index: 999;
-}
-	#top_banner_ul.inner li a img{
-		width: 100%;
-	}
-#top_banner_ul li:nth-child(even){
-float: right;
-
-}
-#top_banner_ul li:nth-child(odd){
-float: left;
-
-}
-	#top_banner_ul li:nth-child(n+3){
-		margin-top: 15px;
-	}
-  #top_banner_ul li p{
-    text-align: center;
-    font-size: 24px;
-    color: #ff59ab;
-    font-weight: bold;
-    padding: 10px 0;
-  }
 #slide_area{
   padding: 0;
   height: 360px;
@@ -1639,20 +1653,6 @@ a.blog_category_list:hover{
   }
   .osaka_map{
     margin-top: 40px;
-  }
-  #footer_inner .innerBox{
-    -webkit-flex-direction: column;
-    flex-direction: column;
-  }
-  #footer_inner .innerBox .addArea{
-    width: 100%;
-  }
-  #footer_inner .innerBox .addArea .footer_tel{
-    font-size: 30px;
-  }
-  #footer_inner .innerBox .contactArea{
-    margin-top: 30px;
-    width: 100%;
   }
 	#top_banner_ul li img{
 		width: 100%;
