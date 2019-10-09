@@ -19,7 +19,6 @@ $category = get_the_category_list();
 $the_title =  the_title( '' , '' , false );
     echo "<h2>".$the_title."</h2>";
     echo $category;
-    echo $branch."教室";
  the_content();
 
 endwhile;

@@ -13,14 +13,14 @@
 <div class="innerBox">
 <div class="addArea">
 <h3>京都山科</h3>
-<p class="footer_adrress">〒607-8169<br class="sp">
+<p class="footer_adrress">〒607-8169<br>
 京都府京都市山科区椥辻西浦町1-8<br>
 東部文化会館
 <h3>大阪心斎橋</h3>
-<p class="footer_adrress">〒607-8169<br class="sp">
-大阪市中央区西心斎橋2丁目18-6-2階<br>
-「RENT A STUDIO Avenue」<br class="sp">
-スタジオ アベニュー</p>
+<p class="footer_adrress">〒542-0086<br>
+RO studio(アールオースタジオ)<br>
+大阪府大阪市中央区西心斎橋１丁目16-7<br>
+サザンウエストビル7階</p>
 <p class="footer_tel">tel:06-6539-0655<span>営業時間外はお問合せフォームよりお問い合わせください。</span></p>  
 </div> 
   <div class="contactArea">

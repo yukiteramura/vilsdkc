@@ -1378,11 +1378,11 @@ a.blog_category_list {
 }
 a.blog_category_list:after {
   content: "";
-  width: 10px;
-  height: 10px;
+  width: 5px;
+  height: 5px;
   position: absolute;
   top: 50%;
-  right: 20px;
+  right: 10px;
   margin-top: -5px;
   border-style: solid;
   border-width: 1px 1px 0 0;
@@ -1410,7 +1410,7 @@ a.blog_category_list:hover {
   margin-bottom: 40px;
 }
 .subNav.blog li {
-  width: 32%;
+  width: 23%;
 }
 .subNav li:nth-child(n+3) {
   margin-top: 20px;

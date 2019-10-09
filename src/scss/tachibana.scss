@@ -1,0 +1,803 @@
+@charset "utf-8";
+@import "_format";
+@import "_variables";
+@import "_extend";
+@import "_mixin";
+/* ********************************************************
+	add style CSS
+******************************************************** */
+
+/*-------------------------------
+  Font Set - Color
+-------------------------------*/
+
+/*-------------------------------
+  common
+-------------------------------*/
+html{
+	overflow: auto;
+}
+html,body{
+	height: 100%;
+	font-size: 62.5%;
+  font-feature-settings : "palt";
+  text-align: justify;
+  text-justify: inter-ideograph;
+  font-weight: bold;
+  line-height: 1.6;
+  color: $bk;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+	font-family: $font_yugo;
+  font-feature-settings : "palt";
+  font-weight: normal;
+}
+a[href^="tel:"]{
+	text-decoration: none;
+}
+a[href^="tel:"]:hover{
+	cursor: default;
+}
+
+a{
+	text-decoration: none;
+}
+.pc{
+  @include max-screen($SP01blake) {
+    display: none !important;
+  }
+}
+
+.sp{
+  @include min-screen($SP01blake){
+    display: none !important;
+  }
+}
+#container{
+  width: 100%;
+  box-sizing: border-box;
+  @include max-screen($SP01blake){
+		padding-top: 60px;
+	}
+} 
+
+.fadein {
+   opacity : 0;
+  transform: translateY(30px);
+  transition: all 1s;
+}
+
+
+/*-------------------------------
+  Header
+-------------------------------*/
+#tachibanaImg{
+  text-align: center;
+  max-width: 980px;
+  margin: 0 auto;
+  img{
+    width: 100%;
+  }
+}
+#pageHeader{
+	background: $pink;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	@include max-screen($SP01blake){
+	  background: $pink;
+	}
+	#headerInner{
+		max-width: 980px;
+		margin: 0 auto;
+		position: relative;
+		@include max-screen($SP01blake){
+			height: 60px;
+		}
+		.logo{
+			background: url(../images/osaka/img_logo02.svg) center center no-repeat;
+			background-size: contain;
+			width: 400px;
+			height: 70px;
+			text-indent: 100%;
+			overflow: hidden;
+			white-space: nowrap;
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: none;
+			@include max-screen($SP01blake){
+			background: url(../images/osaka/icon_vils.svg) center left no-repeat;
+				display: block;
+				background-size: contain;
+				width: 40%;
+				height: 50px;
+				top: 50%;
+				left: 10px;
+				margin-top: -25px;
+			}
+			@include max-screen($SP02blake){
+				width: 15%;
+			}
+		}
+		.nav{
+			position: absolute;
+			top: 30px;
+			right: 0;
+			@include flex-a;
+			@include max-screen($SP01blake){
+				top: 0;
+			}
+			li{
+				@include max-screen($SP01blake){
+					width: 70px;
+				}
+				a{
+					color: $white;
+					@include fz(14);
+					font-weight: bold;
+					transition: $base-transition;
+					line-height: 1;
+					@include max-screen($SP01blake){
+						background: $pink;
+						height: 60px;
+						position: relative;
+						@include fz(10);
+						padding-top: 40px;
+						box-sizing: border-box;
+						display: block;
+						text-align: center;
+						@include max-screen($SP02blake){
+							@include fz(8);
+						}
+					}
+					&:before{
+						@extend %iconfont;
+						@include fz(14);
+						color: $white;
+						line-height: 1;
+						display: inline-block;
+						margin-right: 10px;
+						@include max-screen($SP01blake){
+							display: none;
+						}
+					}
+					&:after{
+						@include max-screen($SP01blake){
+							content: "";
+							background-position: center center;
+							background-repeat: no-repeat;
+							background-size: contain;
+							width: 20px;
+							height: 30px;
+							position: absolute;
+							top: 10px;
+							left: 0;
+							right: 0;
+							margin: auto;
+							display: block;
+						}
+					}
+				}
+				&:nth-child(1){
+					a{
+						&:before{
+							content: "\e9b8";
+						}
+						&:after{
+							@include max-screen($SP01blake){
+								background-image:url(../images/osaka/nav01.svg);
+							}
+						}
+					}
+				}
+				&:nth-child(2){
+					a{
+						&:before{
+							content: "\e93e";
+						}
+						&:after{
+							@include max-screen($SP01blake){
+								background-image: url(../images/osaka/nav02.svg);
+							}
+						}
+					}
+				}
+				&:nth-child(3){
+					a{
+						&:before{
+							content: "\e947";
+						}
+						&:after{
+							@include max-screen($SP01blake){
+								background-image: url(../images/osaka/nav03.svg);
+							}
+						}
+					}
+				}
+				&+li{
+					margin-left: 20px;
+					@include max-screen($SP01blake){
+						margin-left: 0;
+						border-left: 1px solid $white;
+					}
+				}
+			}
+		}
+	}
+	&.fixed{
+		height: 70px;
+		box-shadow: 3px 0 5px rgba(0,0,0,.3);
+		@include max-screen($SP01blake){
+			height: 60px;
+		}
+		#headerInner{
+			.logo{
+				display: block;
+			}
+			.nav{
+				li{
+					a{
+						&:before{
+							color: $white;
+							@include max-screen($SP01blake){
+								color: $white;
+							}
+						}
+						&:hover{
+							opacity: 0.8;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/*-------------------------------
+  共通パーツ
+-------------------------------*/
+.subTtl{
+	@include fz(30);
+	font-weight: bold;
+	margin: 0 auto;
+	text-align: center;
+	color: $pink;
+	line-height: 1;
+	span{
+		@include fz(14);
+		color: $bk;
+		display: block;
+		margin-top: 5px;
+		font-weight: normal;
+		@include max-screen($SP01blake){
+			@include fz(14);
+		}
+	}
+}
+.btn{
+	background: $pink;
+	width: 480px;
+	height: 80px;
+	margin: 0 auto;
+	display: block;
+	color: $white;
+	@include fz(20);
+	font-weight: bold;
+	text-align: center;
+	line-height: 80px;
+	border-radius: 10px;
+	transition: $base-transition;
+	position: relative;
+	box-shadow: 3px 0 5px rgba(0,0,0,.3);
+	@include max-screen($SP01blake){
+		width: 100%;
+		height: 60px;
+		line-height: 60px;
+		@include fz(20);
+	}
+	&:hover{
+		opacity: 0.8;
+	}
+	&:after{
+		@include arrow;
+	}
+	&:before{
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		content: "";
+		width: 35px;
+		height: 80px;
+		position: absolute;
+		left: 40px;
+		top: 0;
+			@include max-screen($SP01blake){
+				height: 60px;
+				}
+	}
+	&.mail{
+		background: #33bab1;
+		&:before{
+			background-image: url(../images/osaka/icon_mail.svg);
+		}
+	}
+	&.tel{
+		background: #33bab1;
+		&:before{
+			background-image: url(../images/osaka/icon_tel.svg);
+		}
+	}
+}
+/*-------------------------------
+  contents
+-------------------------------*/
+.mv{
+	@include flex-a;
+	flex-direction: column;
+  background: url(../images/osaka/img_mv.png) center bottom no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 700px;
+	padding: 40px 20px;
+	box-sizing: border-box;
+	@include max-screen($SP01blake){
+		height: 450px;
+		padding: 20px;
+	}
+	h1{
+		flex-wrap: wrap;
+		text-align: center;
+		color: $white;
+		span{
+			display: block;
+			&.ptn01{
+				@include fz(14);
+				@include max-screen($SP01blake){
+				}
+			}
+			&.logo{
+				max-width: 210px;
+				margin: 20px auto;
+				@include max-screen($SP01blake){
+					max-width: 100%;
+					width: 60%;
+					margin: 20px auto;
+				}
+			}
+		}
+		&+p{
+			background: rgba(0,0,0,0.5);
+			display: inline-block;
+			padding: 20px;
+			margin-top: 20px;
+			@include fz(24);
+			font-weight: bold;
+			color: $pink;
+			text-align: center;
+			@include max-screen($SP01blake){
+				@include fz(14);
+			}
+		}
+	}
+}
+.catch{
+	width: 100%;
+	padding: 80px 0;
+	@include max-screen($SP01blake){
+		padding: 40px 15px;
+		box-sizing: border-box;
+	}
+	h2{
+		text-align: center;
+		img{
+			@include max-screen($SP01blake){
+				width: 100%;
+			}
+		}
+		&+p{
+			margin-top: 40px;
+			display: block;
+			@include fz(18);
+			color: $bk;
+			text-align: center;
+			line-height: 2;
+			@include max-screen($SP01blake){
+				@include fz(14);
+			}
+			span{
+				color: $pink;
+				font-weight: bold;
+			}
+		}
+	}
+	&__btnArea{
+		margin-top: 40px;
+		&+p{
+			margin-top: 20px;
+			text-align: center;
+			@include fz(14);
+		}
+		&.sp{
+			margin-top: 20px;
+		}
+	}
+}
+
+.scheduleArea{
+	background: #cceeeb;
+	width: 100%;
+	padding: 80px 0;
+		@include max-screen($SP01blake){
+			padding: 60px 0;
+			box-sizing: border-box;
+		}
+	&__ttl{
+		&.subTtl{
+		}
+	}
+	&__list{
+		max-width: 650px;
+		margin: 80px auto 0;
+		@include max-screen($SP01blake){
+				margin: 40px auto 0;
+			}
+		li{
+			@include flex;
+			align-items: center;
+			@include max-screen($SP01blake){
+				flex-direction: column;
+			}
+			.scheduleArea__list__fig{
+				img{
+					@include max-screen($SP01blake){
+					width: 100%;
+					}
+				}
+			}
+			div{
+				margin-left: 40px;
+				.scheduleArea__list__time{
+				@include fz(18);
+					font-weight: bold;
+				@include max-screen($SP01blake){
+					@include fz(18);
+					text-align: center;
+					margin: 0;
+				}
+			}
+        .scheduleArea__list__name{
+          color: $pink;
+				@include fz(24);
+					font-weight: bold;
+				@include max-screen($SP01blake){
+					@include fz(18);
+					text-align: center;
+					margin: 0;
+				}
+			}
+				.scheduleArea__list__txt{
+				@include fz(16);
+				margin-top: 20px;
+				@include max-screen($SP01blake){
+					text-align: center;
+					margin: 20px 0 0 0;
+					@include fz(14);
+				}
+			}
+        .scheduleArea__list__btn{
+          position: relative;
+          background: $pink;
+          width: 100%;
+          height: 50px;
+          text-align: center;
+          color: $white;
+          line-height: 50px;
+          border-radius: 50px;
+          display: block;
+          margin-top: 20px;
+          @include fz(16);
+          &:after{
+            @include arrow;
+          }
+        }
+				@include max-screen($SP01blake){
+					width: 90%;
+					margin: 20px auto 0;
+				}
+			}
+			&+li{
+				margin-top: 40px;
+			}
+		}
+	}
+}
+.systemArea{
+	width: 100%;
+	padding: 80px 0;
+	@include max-screen($SP01blake){
+		padding: 60px 0 0;
+		box-sizing: border-box;
+	}
+	&__txt{
+		margin-top: 80px;
+		@include fz(18);
+		text-align: center;
+    @include max-screen($SP01blake){
+      margin-top: 40px;
+    }
+	}
+	&__btnArea{
+		margin-top: 40px;
+		@include max-screen($SP01blake){
+			width: 90%;
+			margin: 40px auto 0;
+		}
+		&+.systemArea__btnArea{
+			margin-top: 20px;
+			@include max-screen($SP01blake){
+			width: 90%;
+			margin: 20px auto 0;
+		}
+		}
+		&+p{
+			margin-top: 20px;
+			text-align: center;
+			@include fz(14);
+		}
+		&.sp{
+				margin-top: 20px;
+			@include max-screen($SP01blake){
+			width: 90%;
+			margin: 20px auto 0;
+		}
+			}
+	}
+}
+.access{
+	padding: 80px 0 0;
+  @include max-screen($SP01blake){
+    padding: 60px 0 0;
+  }
+	&__inner{
+		margin-top: 80px;
+		@include flex-w-js;
+			@include max-screen($SP01blake){
+				margin-top: 40px;
+				flex-direction: column;
+			}
+		&__map{
+			width: 50%;
+			height: 500px;
+			@include max-screen($SP01blake){
+				width: 80%;
+				height: 250px;
+				margin: 0 auto;
+			}
+		}
+		&__add{
+			@include flex-a;
+			background: $pink;
+			width: 50%;
+			height: 500px;
+			color: $white;
+			text-align: center;
+			@include fz(16);
+			@include max-screen($SP01blake){
+				width: 100%;
+				height: auto;
+				padding: 40px 20px;
+				box-sizing: border-box;
+				margin-top: 40px;
+				@include fz(14);
+			}
+			h2{
+				@include fz(18);
+				@include max-screen($SP01blake){
+					@include fz(14);
+				}
+				span{
+					@include fz(22);
+					display: inline-block;
+					@include max-screen($SP01blake){
+						@include fz(18);
+					}
+				}
+				&+p{
+					margin-top: 1em;
+					&+p{
+						margin-top: 1em;
+					}
+				}
+			}
+		}
+	}
+	&__btnArea{
+		margin-top: 40px;
+		@include max-screen($SP01blake){
+			width: 90%;
+			margin: 40px auto 0;
+		}
+		&+p{
+			margin-top: 20px;
+			text-align: center;
+			@include fz(14);
+			@include max-screen($SP01blake){
+			width: 90%;
+			margin: 20px auto 0;
+		}
+		}
+		&.sp{
+			margin-top: 20px;
+			@include max-screen($SP01blake){
+				width: 90%;
+				margin: 20px auto 0;
+			}
+		}
+	}
+}
+
+.blogArea {
+	width: 100%;
+	max-width: 680px;
+	margin: 0 auto ;
+	padding: 80px 0;
+	@include max-screen($SP01blake){
+		padding: 40px 15px;
+		box-sizing: border-box;
+	}
+	  .blog__list {
+    max-width: 960px;
+    margin: 80px auto 0;
+			@include max-screen($SP01blake){
+				margin: 40px auto 0;
+			}
+		&__item{
+			@include flex;
+			align-items: center;
+			flex-direction: column;
+			@include fz(16);
+			color: #000;
+			&.new{
+				&:before{
+					
+				}
+			}
+			&+li{
+				margin-top: 20px;
+			}
+		}
+		&__thumb{
+			position: relative;
+			&:before{
+				content: "NEW";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 50px;
+				height: 30px;
+				line-height: 30px;
+				color: #fff;
+				background: #ff7bac;
+				font-size: 14px;
+				font-size: 1.4rem;
+				font-weight: bold;
+				display: block;
+				text-align: center;
+				z-index: 2;
+			}
+			img{
+				width: 100%;
+			}
+		}
+		&__contents{
+			text-align: center;
+		}
+		&__data{
+			color: #ff7bac;
+		}
+		&__ttl{
+			font-size: 20px;
+			font-size: 2rem;
+			font-weight: bold;
+			margin-bottom: .5em;
+		}
+  }
+	&__btnArea{
+				margin-top: 40px;
+		}
+	.blog__list__contents__txt{
+				line-height: 2;
+				img{
+					width: 100%;
+					height: auto;
+				}
+			}
+}
+
+
+
+  
+
+
+
+
+/*-------------------------------
+  Footer
+-------------------------------*/
+#pageFooter{
+	width: 100%;
+	margin-top: 80px;
+	position: relative;
+	background: #33bab1;
+	@include max-screen($SP01blake){
+		margin-top: 50px;
+	}
+	#footerInner{
+		max-width: 980px;
+		margin: 0 auto;
+		padding: 60px 0;
+		text-align: center;
+		color: $white;
+		@include fz(12);
+		@include max-screen($SP01blake){
+			padding: 20px 0;
+		}
+		#copyright{
+			&+p{
+				margin-top: 1em;
+			}
+		}
+	.pageTop {
+			position: absolute;
+			right: 30px;
+			bottom: 115px;
+			display: block;
+			z-index: 9999;
+		@include max-screen($SP01blake){
+			right: 20px;
+			bottom: 80px;
+		}
+		a{
+			overflow: hidden;
+			text-indent: 100%;
+			white-space: nowrap;
+			display: block;
+			width: 60px;
+			height: 60px;
+			background: #fff;
+			border-radius: 50%;
+			transition: all .3s ease;
+			position: relative;
+			box-shadow: 3px 0 5px rgba(0,0,0,.2);
+				@include max-screen($SP01blake){
+					width: 40px;
+					height: 40px;
+				}
+				&:before{
+					content: "";
+					display: block;
+					position: absolute;
+					width: 20px;
+					height: 20px;
+					border-top: 2px solid $pink;
+					border-right: 2px solid $pink;
+					transform: rotate(-45deg);
+					top: 15px;
+					bottom: 0;
+					right: 0;
+					left: 0;
+					margin: auto;
+					@include max-screen($SP01blake){
+						top: 5px;
+						width: 10px;
+						height: 10px;
+					}
+				}
+			}
+		}
+	}
+}

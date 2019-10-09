@@ -48,9 +48,12 @@ wp_reset_postdata();
 <h2 class="contents_h2"><img alt="a" src="<?php echo get_bloginfo("template_directory") ?>/images/pc/h2_school.jpg"></h2>
 <div class="content">
 <ul class="subNav school">
-<?php
+  <li class="list_block"><a href="/" class="blog_category_list list_block">京都山科</a></li>
+  <li class="list_block"><a href="/osaka/" class="blog_category_list list_block">大阪心斎橋</a></li>
+  <li class="list_block"><a href="/tachibana/" class="blog_category_list list_block">兵庫立花</a></li>
+<!--<?php
 echo $school;
-?>
+?>-->
 </ul>
 </div>
 </section>

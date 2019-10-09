@@ -1,22 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="ja">
-
-<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<!--<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 	<!--prefix属性:トップページはwebsite、個別ページはarticle-->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>VILS DANCE KIDS CLUB ビルズダンスキッズクラブ大阪校</title>
+	<title>VILS DANCE KIDS CLUB ビルズダンスキッズクラブ立花校</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<meta name="keywords" content="VILS DANCE KIDS CLUB ビルズダンスキッズクラブ,キッズダンス,大阪校,大阪,西心斎橋,堀江">
-	<meta name="description" content="大阪 西心斎橋・堀江のキッズダンススタジオ VILS DANCE KIDS CLUB ビルズダンスキッズクラブ大阪校">
+	<meta name="keywords" content="VILS DANCE KIDS CLUB ビルズダンスキッズクラブ,キッズダンス,兵庫県,尼崎市,立花">
+	<meta name="description" content="兵庫県尼崎市立花のキッズスダンスタジオ VILS DANCE KIDS CLUB ビルズダンスキッズクラブ立花校">
 	<!-- ※ OGP 基本設定 -->
 	<meta property="og:type" content="article"/>
-	<meta property="og:title" content="大阪 西心斎橋・堀江のキッズダンススタジオ VILS DANCE KIDS CLUB"/>
+	<meta property="og:title" content="兵庫県尼崎市立花のキッズスダンススタジオ ビルズダンスキッズクラブ"/>
 	<!--20文字以内が好ましい-->
-	<meta property="og:description" content="大阪 西心斎橋・堀江のキッズダンススタジオ VILS DANCE KIDS CLUB ビルズダンスキッズクラブ大阪校"/>
+	<meta property="og:description" content="兵庫県尼崎市立花のキッズスダンススタジオ VILS DANCE KIDS CLUB ビルズダンスキッズクラブ立花校"/>
 	<!--最適文字数 80~90-->
-	<meta property="og:url" content="https://www.vils-dkc.com/osaka/"/>
-	<meta property="og:site_name" content="VILS DANCE KIDS CLUB ビルズダンスキッズクラブ大阪校"/>
+	<meta property="og:url" content="https://www.vils-dkc.com/tachibana/"/>
+	<meta property="og:site_name" content="VILS DANCE KIDS CLUB ビルズダンスキッズクラブ立花校"/>
 	<!--サイト名やブランド情報-->
 	<!--推奨size w1200×h630-->
 	<meta property="og:locale" content="ja_JP"/>
@@ -24,16 +23,18 @@
 	<meta name="twitter:card" content="summary_large_image"/>
 	<!--summaryにする場合は1:1の画像を別途用意-->
 	<!--<meta name="twitter:image" content="Twitter用の画像URL" /> summaryの場合の画像設定-->
-	<link rel="canonical" href="https://www.vils-dkc.com/osaka/">
+	<link rel="canonical" href="https://www.vils-dkc.com/tachibana/">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/pages.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/tachibana.css">
 	<!--[if lt IE 9]><script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
 
 <body>
-	<div id="container">
+  <div id="tachibanaImg"><a href="<?php echo get_bloginfo("template_directory") ?>/images/tachibana/tachibana01.png" target="_blank"><img src="<?php echo get_bloginfo("template_directory") ?>/images/tachibana/tachibana01.png" alt=""></a>
+  <a href="<?php echo get_bloginfo("template_directory") ?>/images/tachibana/tachibana01.png" target="_blank"><img src="<?php echo get_bloginfo("template_directory") ?>/images/tachibana/tachibana02.png" alt=""></a></div>
+	<!--<div id="container">
 		<header id="pageHeader" class="fixed">
 			<div id="headerInner">
 				<p class="logo">VILS DANCE KIDS CLUB</p>
@@ -45,9 +46,9 @@
 					<li><a href="#access">アクセス</a>
 					</li>
 				</ul>
-				<!--/#headerInner-->
+				<!--/#headerInner
 			</div>
-			<!--/#pageHeader-->
+			<!--/#pageHeader
 		</header>
 		<div id="contents">
 			<div id="contentsInner">
@@ -79,7 +80,7 @@
 							'posts_per_page' => 1,
 							'orderby' => 'date',
 							'order' => 'DESC',
-							'category_name' => '大阪心斎橋'
+							'category_name' => '兵庫立花'
 						);
 						$the_query = new WP_Query( $args );
 						while ( $the_query->have_posts() ):
@@ -104,7 +105,7 @@
 						?>
 					</ul>
 					<!--<p class="blogArea__btnArea"><a href="<?php echo home_url(); ?>/blog/?blog_category=大阪心斎橋" class="btn">一覧を見る</a>
-					</p>-->
+					</p>
 				</section>
 				<section class="scheduleArea fadein" id="schdule">
 					<h2 class="scheduleArea__ttl subTtl">Schedule<span>スケジュール</span></h2>
@@ -173,21 +174,21 @@
 					</p>
 					<p class="txt sp">※営業時間外の場合は<br class="sp">お問い合わせフォームよりお問い合わせください。</p>
 				</section>
-				<!--/#contentsInner-->
+				<!--/#contentsInner
 			</div>
-			<!--/#contents-->
+			<!--/#contents
 		</div>
 		<footer id="pageFooter">
 			<div id="footerInner"> <small id="copyright">© 2019 VILS DKC All Rights Reserved.</small>
 				<p>運営元<br> 株式会社ベナムクリエイティブ </p>
 				<p class="pageTop"><a href="javascript:void(0);">ページトップ</a>
 				</p>
-				<!--/#pageFooter-->
+				<!--/#pageFooter
 			</div>
 		</footer>
-		<!--/#container-->
+		<!--/#container
 	</div>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
-</body>
+</body>-->
 
 </html>

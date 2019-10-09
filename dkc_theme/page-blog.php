@@ -28,6 +28,7 @@ $category = "";
 <li><a href="?" class="blog_category_list">全て表示</a></li>
 <li><a href="?blog_category=京都山科" class="blog_category_list">京都山科</a></li>
 <li><a href="?blog_category=大阪心斎橋" class="blog_category_list">大阪心斎橋</a></li>
+<li><a href="?blog_category=兵庫立花" class="blog_category_list">兵庫立花</a></li>
 </ul>
 <?php $paged = get_query_var('paged'); ?>
 <?php query_posts("posts_per_page=3&paged=$paged&order=DESC&category_name=".h($category).""); ?>
@@ -98,6 +99,7 @@ EOM;
 <li><a href="?" class="blog_category_list">全て表示</a></li>
 <li><a href="?blog_category=京都山科" class="blog_category_list">京都山科</a></li>
 <li><a href="?blog_category=大阪心斎橋" class="blog_category_list">大阪心斎橋</a></li>
+<li><a href="?blog_category=兵庫立花" class="blog_category_list">兵庫立花</a></li>
 </ul>
 <?php echo $blog ?>
 
