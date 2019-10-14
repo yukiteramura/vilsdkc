@@ -59,7 +59,7 @@
 				</section>
 				<section class="catch">
 					<h2><img src="<?php echo get_bloginfo("template_directory") ?>/images/osaka/bana_osaka.jpg" alt="VILS DANCE KIDS CLUBビルズダンスキッズクラブ大阪校"></h2>
-					<p><span>心斎橋駅・四ツ橋駅より徒歩5分<br>大阪、心斎橋、堀江近くの<br class="sp">キッズダンススタジオがOPEN!!</span><br>初めてさんばかりなので、初めてダンスをする子にも入りやすいクラスです。<br>
+					<p><span>心斎橋駅・四ツ橋駅より徒歩3分!<br>大阪校がOPENしました!!</span><br>初めてさんばかりなので、初めてダンスをする子にも入りやすいクラスです。<br>
 現在は幼児クラスを展開中!!<br>随時無料体験レッスン実施中！<br>
 予約無しでOK!<br>
 当日は動きやすい服装と靴をご持参ください(^^)</p>
@@ -107,7 +107,7 @@
 					</p>-->
 				</section>
 				<section class="scheduleArea fadein" id="schdule">
-					<h2 class="scheduleArea__ttl subTtl">Schedule<span>スケジュール</span></h2>
+					<h2 class="scheduleArea__ttl subTtl">Schedule<span>大阪校スケジュール</span></h2>
 					<ul class="scheduleArea__list">
 						<li>
 							<p class="scheduleArea__list__fig"><a href="http://www.vils-dkc.com/instructor/aya-vetty/" target="_blank"><img src="<?php echo get_bloginfo("template_directory") ?>/images/osaka/img_aya.png" alt="aya"></a>
@@ -126,8 +126,8 @@
 							<div>
                 <p class="scheduleArea__list__name">インストラクター：MAYU先生</p>
 							<p class="scheduleArea__list__time">毎週木曜日<br>【リトルヒップホップクラス】<br>17:20〜(50分クラス)</p>
-							<p class="scheduleArea__list__txt">リズム感とノリを重視した<br class="sp">楽しいリトルヒップホップクラス！<br><br>
-対象年齢 5歳〜小学校低学年まで</p>
+							<p class="scheduleArea__list__txt">初めてでも、丁寧な指導でリズムトレーニング中心のリトルヒップホップクラス！男の子も大歓迎！<br><br>
+対象年齢 4歳〜小学校低学年まで</p>
                 <a href="http://www.vils-dkc.com/instructor/mayu-venom/" target="_blank" class="scheduleArea__list__btn">MAYU先生のプロフィールを見る</a>
 							</div>
 						</li>
@@ -139,6 +139,8 @@
 					<p class="systemArea__btnArea"><a href="http://www.vils-dkc.com/blog/?blog_category=%E5%A4%A7%E9%98%AA%E5%BF%83%E6%96%8E%E6%A9%8B" class="btn">ブログを見る</a>
 					</p>
 					<p class="systemArea__btnArea"><a href="http://www.vils-dkc.com/" class="btn">京都山科校のサイトはコチラ</a>
+					</p>
+          <p class="systemArea__btnArea"><a href="http://www.vils-dkc.com/tachibana/" class="btn">兵庫立花校のサイトはコチラ</a>
 					</p>
 					<p class="systemArea__btnArea"><a href="<?php echo home_url(); ?>/contact/" class="btn mail">お問い合わせ</a>
 					</p>

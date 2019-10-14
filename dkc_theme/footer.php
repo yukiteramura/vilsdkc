@@ -12,15 +12,18 @@
 </ul>
 <div class="innerBox">
 <div class="addArea">
-<h3>京都山科</h3>
-<p class="footer_adrress">〒607-8169<br>
+<h3>京都山科校</h3>
+<p class="footer_adrress">
 京都府京都市山科区椥辻西浦町1-8<br>
 東部文化会館
-<h3>大阪心斎橋</h3>
-<p class="footer_adrress">〒542-0086<br>
+<h3>大阪校</h3>
+<p class="footer_adrress">
 RO studio(アールオースタジオ)<br>
 大阪府大阪市中央区西心斎橋１丁目16-7<br>
 サザンウエストビル7階</p>
+  <h3>兵庫立花校</h3>
+<p class="footer_adrress">尼崎市立花町2-18-1<br>
+グリーンマンションエル1階
 <p class="footer_tel">tel:06-6539-0655<span>営業時間外はお問合せフォームよりお問い合わせください。</span></p>  
 </div> 
   <div class="contactArea">
@@ -37,3 +40,4 @@ RO studio(アールオースタジオ)<br>
 <p>運営元 株式会社ベナムクリエイティブ &copy; VILS 2016</p>
 </div>
 </footer>
+<script src="<?php echo get_bloginfo("template_directory") ?>/js/script_kyoto.js"></script> 

@@ -330,7 +330,7 @@ a{
 .mv{
 	@include flex-a;
 	flex-direction: column;
-  background: url(../images/osaka/img_mv.png) center bottom no-repeat;
+  background: url("../images/osaka/img_mv.jpg") center bottom no-repeat;
 	background-size: cover;
 	width: 100%;
 	height: 700px;

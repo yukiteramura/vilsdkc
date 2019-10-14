@@ -32,9 +32,9 @@
 </head>
 
 <body>
-  <div id="tachibanaImg"><a href="<?php echo get_bloginfo("template_directory") ?>/images/tachibana/tachibana01.png" target="_blank"><img src="<?php echo get_bloginfo("template_directory") ?>/images/tachibana/tachibana01.png" alt=""></a>
-  <a href="<?php echo get_bloginfo("template_directory") ?>/images/tachibana/tachibana01.png" target="_blank"><img src="<?php echo get_bloginfo("template_directory") ?>/images/tachibana/tachibana02.png" alt=""></a></div>
-	<!--<div id="container">
+  <!--<div id="tachibanaImg"><a href="<?php echo get_bloginfo("template_directory") ?>/images/tachibana/tachibana01.png" target="_blank"><img src="<?php echo get_bloginfo("template_directory") ?>/images/tachibana/tachibana01.png" alt=""></a>
+  <a href="<?php echo get_bloginfo("template_directory") ?>/images/tachibana/tachibana01.png" target="_blank"><img src="<?php echo get_bloginfo("template_directory") ?>/images/tachibana/tachibana02.png" alt=""></a></div>-->
+	<div id="container">
 		<header id="pageHeader" class="fixed">
 			<div id="headerInner">
 				<p class="logo">VILS DANCE KIDS CLUB</p>
@@ -46,24 +46,22 @@
 					<li><a href="#access">アクセス</a>
 					</li>
 				</ul>
-				<!--/#headerInner
+				<!--/#headerInner-->
 			</div>
-			<!--/#pageHeader
+			<!--/#pageHeader-->
 		</header>
 		<div id="contents">
 			<div id="contentsInner">
 				<section class="mv">
-					<h1> <span class="logo"><img src="<?php echo get_bloginfo("template_directory") ?>/images/osaka/img_logo.svg" alt="RENT A STUDIO Avenue"></span> <span class="ptn01">VILS DANCE KIDS CLUB<br>
-        ビルズダンスキッズクラブ大阪校</span> </h1>
-					<p>心斎橋駅・四ツ橋駅より徒歩3分!<br>
+					<h1> <span class="logo"><img src="<?php echo get_bloginfo("template_directory") ?>/images/tachibana/img_logo.svg" alt="RENT A STUDIO Avenue"></span> <span class="ptn01">VILS DANCE KIDS CLUB<br>
+        ビルズダンスキッズクラブ立花校</span> </h1>
+					<p>JR立花駅より徒歩3分!<br>
 随時無料体験レッスン実施中！<br>予約無しでOK!<br class="sp">当日は動きやすい服装と靴をご持参ください</p>
 				</section>
 				<section class="catch">
-					<h2><img src="<?php echo get_bloginfo("template_directory") ?>/images/osaka/bana_osaka.jpg" alt="VILS DANCE KIDS CLUBビルズダンスキッズクラブ大阪校"></h2>
-					<p><span>心斎橋駅・四ツ橋駅より徒歩5分<br>大阪、心斎橋、堀江近くの<br class="sp">キッズダンススタジオがOPEN!!</span><br>初めてさんばかりなので、初めてダンスをする子にも入りやすいクラスです。<br>
-現在は幼児クラスを展開中!!<br>随時無料体験レッスン実施中！<br>
-予約無しでOK!<br>
-当日は動きやすい服装と靴をご持参ください(^^)</p>
+					<h2>2019年11月６日(水）OPEN</h2>
+					<p><span>JR立花駅より徒歩3分!<br>兵庫県尼崎市立花に<br class="sp">キッズダンススタジオがOPEN!!</span><br>初めてさんばかりなので、初めてダンスをする子にも入りやすいクラスです。<br><span>11/6(水)・11/8(金)の2日間無料体験レッスンキャンペーンを開催!!</span><br>
+            お問い合わせフォームよりご予約、お問い合わせお待ちしております！<br>当日は動きやすい服装と靴をご持参ください(^^)</p>
 					<p class="catch__btnArea"><a href="<?php echo home_url(); ?>/contact/" class="btn mail">お問い合わせ</a>
 					</p>
 					<p class="txt pc">※お電話のお問い合わせは06-6539-0655<br> 営業時間外の場合はお問い合わせフォームよりお問い合わせください。
@@ -104,21 +102,25 @@
 						wp_reset_postdata();
 						?>
 					</ul>
-					<!--<p class="blogArea__btnArea"><a href="<?php echo home_url(); ?>/blog/?blog_category=大阪心斎橋" class="btn">一覧を見る</a>
+					<p class="blogArea__btnArea"><a href="<?php echo home_url(); ?>/blog/?blog_category=大阪心斎橋" class="btn">一覧を見る</a>
 					</p>
 				</section>
 				<section class="scheduleArea fadein" id="schdule">
-					<h2 class="scheduleArea__ttl subTtl">Schedule<span>スケジュール</span></h2>
+					<h2 class="scheduleArea__ttl subTtl">Schedule<span>立花校スケジュール</span></h2>
 					<ul class="scheduleArea__list">
 						<li>
-							<p class="scheduleArea__list__fig"><a href="http://www.vils-dkc.com/instructor/aya-vetty/" target="_blank"><img src="<?php echo get_bloginfo("template_directory") ?>/images/osaka/img_aya.png" alt="aya"></a>
+							<p class="scheduleArea__list__fig"><a href="http://www.vils-dkc.com/instructor/yukie-candy-neon/" target="_blank"><img src="<?php echo get_bloginfo("template_directory") ?>/images/tachibana/img_yukie.png" alt="YUKIE"></a>
 							</p>
 							<div>
-                <p class="scheduleArea__list__name">インストラクター：AYA先生</p>
-							<p class="scheduleArea__list__time">毎週木曜日<br>【ドールクラス】<br>16:30~(50分クラス)</p>
-							<p class="scheduleArea__list__txt">プリキュアやアイドルのダンスを中心に<br class="sp">女の子が可愛く夢中になれるレッスンをしています！<br><br>
-対象年齢 3歳〜小学生まで</p>
-                <a href="http://www.vils-dkc.com/instructor/aya-vetty/" target="_blank" class="scheduleArea__list__btn">AYA先生のプロフィールを見る</a>
+                <p class="scheduleArea__list__name">インストラクター：YUKIE先生</p>
+							<p class="scheduleArea__list__time">毎週水曜日<br>【ドールクラス】<br>17:10〜18:00</p>
+							<p class="scheduleArea__list__txt">ファントミラージュやパプリカダンス、韓国アイドルなどのアイドル振付など初めての子でも楽しくダンスが始めれる初心者クラス！</p>
+                <p>対象年齢 3才〜小学校低学年まで</p>
+                <p class="scheduleArea__list__time">毎週水曜日<br>【ストリートジャズクラス】<br>18:10〜19:00</p>
+							<p class="scheduleArea__list__txt">小学生になったらちょっと大人っぽいダンス挑戦してみよう！アーティストの振付を担当しているプロの先生の基礎中心のストリートジャズを是非体験しにきてください！</p>
+                <p>対象年齢 小学校〜</p>
+                <p><a href="http://www.vils-dkc.com/instructor/yukie-candy-neon/" target="_blank" class="scheduleArea__list__btn">YUKIE先生のプロフィールを見る</a></p>
+              
 					</div>
 						</li>
 						<li>
@@ -126,10 +128,10 @@
 							</p>
 							<div>
                 <p class="scheduleArea__list__name">インストラクター：MAYU先生</p>
-							<p class="scheduleArea__list__time">毎週木曜日<br>【リトルヒップホップクラス】<br>17:20〜(50分クラス)</p>
-							<p class="scheduleArea__list__txt">リズム感とノリを重視した<br class="sp">楽しいリトルヒップホップクラス！<br><br>
-対象年齢 5歳〜小学校低学年まで</p>
-                <a href="http://www.vils-dkc.com/instructor/mayu-venom/" target="_blank" class="scheduleArea__list__btn">MAYU先生のプロフィールを見る</a>
+							<p class="scheduleArea__list__time">毎週金曜日<br>【リトルヒップホップクラス】<br>16:30〜17:20</p>
+							<p class="scheduleArea__list__txt">初めてでも、丁寧な指導でリズムトレーニング中心のリトルヒップホップクラス！男の子も大歓迎！</p>
+                <p>対象年齢 4歳〜小学校低学年まで</p>
+                <p><a href="http://www.vils-dkc.com/instructor/mayu-venom/" target="_blank" class="scheduleArea__list__btn">MAYU先生のプロフィールを見る</a></p>
 							</div>
 						</li>
 					</ul>
@@ -137,9 +139,11 @@
 				<section class="systemArea fadein" id="system">
 					<h2 class="systemArea__ttl subTtl">System<span>料金</span></h2>
 					<p class="systemArea__txt">1レッスンは1500円（税別）<br> お月謝 4000円（税別）/月4回（1回1000円）</p>
-					<p class="systemArea__btnArea"><a href="http://www.vils-dkc.com/blog/?blog_category=%E5%A4%A7%E9%98%AA%E5%BF%83%E6%96%8E%E6%A9%8B" class="btn">ブログを見る</a>
+					<p class="systemArea__btnArea"><a href="http://www.vils-dkc.com/blog/?blog_category=%E5%85%B5%E5%BA%AB%E7%AB%8B%E8%8A%B1" class="btn">ブログを見る</a>
 					</p>
 					<p class="systemArea__btnArea"><a href="http://www.vils-dkc.com/" class="btn">京都山科校のサイトはコチラ</a>
+					</p>
+          <p class="systemArea__btnArea"><a href="http://www.vils-dkc.com/osaka/" class="btn">大阪校のサイトはコチラ</a>
 					</p>
 					<p class="systemArea__btnArea"><a href="<?php echo home_url(); ?>/contact/" class="btn mail">お問い合わせ</a>
 					</p>
@@ -153,16 +157,14 @@
 					<h2 class="access__ttl subTtl">Access<span>アクセスマップ</span></h2>
 					<div class="access__inner">
 						<div class="access__inner__map">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.2686494917657!2d135.4955151152314!3d34.67316858044153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e7100e390541%3A0xac78fde8abaf66ab!2z44CSNTQyLTAwODYg5aSn6Ziq5bqc5aSn6Ziq5biC5Lit5aSu5Yy66KW_5b-D5paO5qmL77yR5LiB55uu77yR77yW4oiS77yXIOOCteOCtuODs-OCpuOCqOOCueODiOODk-ODqzfpmo4!5e0!3m2!1sja!2sjp!4v1555849496570!5m2!1sja!2sjp" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.620733720002!2d135.39970371523336!3d34.739953180424436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000ee25ef3430f7%3A0x71772482f7e8e566!2z44CSNjYxLTAwMjUg5YW15bqr55yM5bC85bSO5biC56uL6Iqx55S677yS5LiB55uu77yR77yY4oiS77yR!5e0!3m2!1sja!2sjp!4v1570963744836!5m2!1sja!2sjp" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 						</div>
 						<div class="access__inner__add">
 							<div class="inner">
-								<h2>RO studio<br>
-              <span>アールオースタジオ</span></h2>
-								<p>住所<br> 大阪府大阪市中央区西心斎橋１丁目16-7 サザンウエストビル7階<br> TEL:06-6539-0655
+								<h2>ビルズダンスキッズクラブ立花校</h2>
+								<p>住所<br>尼崎市立花町2-18-1 グリーンマンションエル1階<br> TEL:06-6539-0655
 								</p>
-								<p>心斎橋駅・四ツ橋駅より徒歩3分!<br>
-アメリカ村内のイキナリステーキ、王将の前にあるmojoという服屋さんのビルの7階</p>
+								<p>JR立花駅より徒歩3分!</p>
 							</div>
 						</div>
 					</div>
@@ -174,21 +176,21 @@
 					</p>
 					<p class="txt sp">※営業時間外の場合は<br class="sp">お問い合わせフォームよりお問い合わせください。</p>
 				</section>
-				<!--/#contentsInner
+				<!--/#contentsInner-->
 			</div>
-			<!--/#contents
+			<!--/#contents-->
 		</div>
 		<footer id="pageFooter">
 			<div id="footerInner"> <small id="copyright">© 2019 VILS DKC All Rights Reserved.</small>
 				<p>運営元<br> 株式会社ベナムクリエイティブ </p>
 				<p class="pageTop"><a href="javascript:void(0);">ページトップ</a>
 				</p>
-				<!--/#pageFooter
+				<!--/#pageFooter-->
 			</div>
 		</footer>
-		<!--/#container
+		<!--/#container-->
 	</div>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
-</body>-->
+</body>
 
 </html>

@@ -82,14 +82,14 @@ a{
   }
 }
 #pageHeader{
-	background: $pink;
+	background: $or02;
 	width: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 999;
 	@include max-screen($SP01blake){
-	  background: $pink;
+	  background: $or02;
 	}
 	#headerInner{
 		max-width: 980px;
@@ -99,7 +99,7 @@ a{
 			height: 60px;
 		}
 		.logo{
-			background: url(../images/osaka/img_logo02.svg) center center no-repeat;
+			background: url(../images/tachibana/img_logo02.svg) center center no-repeat;
 			background-size: contain;
 			width: 400px;
 			height: 70px;
@@ -111,7 +111,7 @@ a{
 			left: 0;
 			display: none;
 			@include max-screen($SP01blake){
-			background: url(../images/osaka/icon_vils.svg) center left no-repeat;
+			background: url(../images/tachibana/icon_vils.svg) center left no-repeat;
 				display: block;
 				background-size: contain;
 				width: 40%;
@@ -143,7 +143,7 @@ a{
 					transition: $base-transition;
 					line-height: 1;
 					@include max-screen($SP01blake){
-						background: $pink;
+						background: $or02;
 						height: 60px;
 						position: relative;
 						@include fz(10);
@@ -265,7 +265,7 @@ a{
 	font-weight: bold;
 	margin: 0 auto;
 	text-align: center;
-	color: $pink;
+	color: $or02;
 	line-height: 1;
 	span{
 		@include fz(14);
@@ -279,7 +279,7 @@ a{
 	}
 }
 .btn{
-	background: $pink;
+	background: $or02;
 	width: 480px;
 	height: 80px;
 	margin: 0 auto;
@@ -320,13 +320,13 @@ a{
 				}
 	}
 	&.mail{
-		background: #33bab1;
+		background: #86a928;
 		&:before{
 			background-image: url(../images/osaka/icon_mail.svg);
 		}
 	}
 	&.tel{
-		background: #33bab1;
+		background: #86a928;
 		&:before{
 			background-image: url(../images/osaka/icon_tel.svg);
 		}
@@ -338,7 +338,7 @@ a{
 .mv{
 	@include flex-a;
 	flex-direction: column;
-  background: url(../images/osaka/img_mv.png) center bottom no-repeat;
+  background: url(../images/osaka/img_mv.jpg) center bottom no-repeat;
 	background-size: cover;
 	width: 100%;
 	height: 700px;
@@ -376,7 +376,7 @@ a{
 			margin-top: 20px;
 			@include fz(24);
 			font-weight: bold;
-			color: $pink;
+			color: $or02;
 			text-align: center;
 			@include max-screen($SP01blake){
 				@include fz(14);
@@ -392,6 +392,9 @@ a{
 		box-sizing: border-box;
 	}
 	h2{
+    @include fz(24);
+    color: $or02;
+    font-weight: bold;
 		text-align: center;
 		img{
 			@include max-screen($SP01blake){
@@ -399,7 +402,7 @@ a{
 			}
 		}
 		&+p{
-			margin-top: 40px;
+			margin-top: 1em;
 			display: block;
 			@include fz(18);
 			color: $bk;
@@ -409,7 +412,7 @@ a{
 				@include fz(14);
 			}
 			span{
-				color: $pink;
+				color: $or02;
 				font-weight: bold;
 			}
 		}
@@ -428,7 +431,7 @@ a{
 }
 
 .scheduleArea{
-	background: #cceeeb;
+	background: #fffcdb;
 	width: 100%;
 	padding: 80px 0;
 		@include max-screen($SP01blake){
@@ -447,9 +450,10 @@ a{
 			}
 		li{
 			@include flex;
-			align-items: center;
+			align-items: flex-start;
 			@include max-screen($SP01blake){
 				flex-direction: column;
+        align-items: center;
 			}
 			.scheduleArea__list__fig{
 				img{
@@ -469,8 +473,23 @@ a{
 					margin: 0;
 				}
 			}
+        p{
+          @include fz(16);
+          @include max-screen($SP01blake){
+            text-align: center;
+            @include fz(14);
+          }
+          &+p{
+            margin-top: 1em;
+          }
+          &+.scheduleArea__list__time{
+            @include max-screen($SP01blake){
+              margin-top: 30px;
+            }
+          }
+        }
         .scheduleArea__list__name{
-          color: $pink;
+          color: $or02;
 				@include fz(24);
 					font-weight: bold;
 				@include max-screen($SP01blake){
@@ -490,7 +509,7 @@ a{
 			}
         .scheduleArea__list__btn{
           position: relative;
-          background: $pink;
+          background: $or02;
           width: 100%;
           height: 50px;
           text-align: center;
@@ -580,7 +599,7 @@ a{
 		}
 		&__add{
 			@include flex-a;
-			background: $pink;
+			background: $or02;
 			width: 50%;
 			height: 500px;
 			color: $white;
@@ -732,7 +751,7 @@ a{
 	width: 100%;
 	margin-top: 80px;
 	position: relative;
-	background: #33bab1;
+	background: #86a928;
 	@include max-screen($SP01blake){
 		margin-top: 50px;
 	}
@@ -783,8 +802,8 @@ a{
 					position: absolute;
 					width: 20px;
 					height: 20px;
-					border-top: 2px solid $pink;
-					border-right: 2px solid $pink;
+					border-top: 2px solid $or02;
+					border-right: 2px solid $or02;
 					transform: rotate(-45deg);
 					top: 15px;
 					bottom: 0;
