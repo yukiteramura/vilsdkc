@@ -1,6 +1,5 @@
 <!DOCTYPE HTML>
 <html lang="ja">
-
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 	<!--prefix属性:トップページはwebsite、個別ページはarticle-->
 	<meta charset="utf-8">
@@ -8,12 +7,12 @@
 	<title>VILS DANCE KIDS CLUB ビルズダンスキッズクラブ大阪校</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<meta name="keywords" content="VILS DANCE KIDS CLUB ビルズダンスキッズクラブ,キッズダンス,大阪校,大阪,西心斎橋,堀江">
-	<meta name="description" content="大阪 西心斎橋・堀江のキッズダンススタジオ VILS DANCE KIDS CLUB ビルズダンスキッズクラブ大阪校">
+	<meta name="description" content="大阪 難波・四ツ橋・西心斎橋のキッズダンススタジオ VILS DANCE KIDS CLUB ビルズダンスキッズクラブ大阪校">
 	<!-- ※ OGP 基本設定 -->
 	<meta property="og:type" content="article"/>
-	<meta property="og:title" content="大阪 西心斎橋・堀江のキッズダンススタジオ VILS DANCE KIDS CLUB"/>
+	<meta property="og:title" content="大阪 難波・四ツ橋・西心斎橋のキッズダンススタジオ VILS DANCE KIDS CLUB"/>
 	<!--20文字以内が好ましい-->
-	<meta property="og:description" content="大阪 西心斎橋・堀江のキッズダンススタジオ VILS DANCE KIDS CLUB ビルズダンスキッズクラブ大阪校"/>
+	<meta property="og:description" content="大阪 難波・四ツ橋・西心斎橋のキッズダンススタジオ VILS DANCE KIDS CLUB ビルズダンスキッズクラブ大阪校"/>
 	<!--最適文字数 80~90-->
 	<meta property="og:url" content="https://www.vils-dkc.com/osaka/"/>
 	<meta property="og:site_name" content="VILS DANCE KIDS CLUB ビルズダンスキッズクラブ大阪校"/>
@@ -30,6 +29,7 @@
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/pages.css">
 	<!--[if lt IE 9]><script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!-- Global site tag (gtag.js) - Google Ads: 845182420 --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-845182420"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-845182420'); </script>
 </head>
 
 <body>
@@ -54,12 +54,12 @@
 				<section class="mv">
 					<h1> <span class="logo"><img src="<?php echo get_bloginfo("template_directory") ?>/images/osaka/img_logo.svg" alt="RENT A STUDIO Avenue"></span> <span class="ptn01">VILS DANCE KIDS CLUB<br>
         ビルズダンスキッズクラブ大阪校</span> </h1>
-					<p>心斎橋駅・四ツ橋駅より徒歩3分!<br>
+					<p>難波・四ツ橋・西心斎橋から歩いてすぐ！<br>
 随時無料体験レッスン実施中！<br>予約無しでOK!<br class="sp">当日は動きやすい服装と靴をご持参ください</p>
 				</section>
 				<section class="catch">
 					<h2><img src="<?php echo get_bloginfo("template_directory") ?>/images/osaka/bana_osaka.jpg" alt="VILS DANCE KIDS CLUBビルズダンスキッズクラブ大阪校"></h2>
-					<p><span>心斎橋駅・四ツ橋駅より徒歩5分<br>大阪、心斎橋、堀江近くの<br class="sp">キッズダンススタジオがOPEN!!</span><br>初めてさんばかりなので、初めてダンスをする子にも入りやすいクラスです。<br>
+					<p><span>難波・四ツ橋・西心斎橋から歩いてすぐ！<br>大阪校がOPENしました!!</span><br>初めてさんばかりなので、初めてダンスをする子にも入りやすいクラスです。<br>
 現在は幼児クラスを展開中!!<br>随時無料体験レッスン実施中！<br>
 予約無しでOK!<br>
 当日は動きやすい服装と靴をご持参ください(^^)</p>
@@ -107,7 +107,7 @@
 					</p>-->
 				</section>
 				<section class="scheduleArea fadein" id="schdule">
-					<h2 class="scheduleArea__ttl subTtl">Schedule<span>スケジュール</span></h2>
+					<h2 class="scheduleArea__ttl subTtl">Schedule<span>大阪校スケジュール</span></h2>
 					<ul class="scheduleArea__list">
 						<li>
 							<p class="scheduleArea__list__fig"><a href="http://www.vils-dkc.com/instructor/aya-vetty/" target="_blank"><img src="<?php echo get_bloginfo("template_directory") ?>/images/osaka/img_aya.png" alt="aya"></a>
@@ -126,8 +126,8 @@
 							<div>
                 <p class="scheduleArea__list__name">インストラクター：MAYU先生</p>
 							<p class="scheduleArea__list__time">毎週木曜日<br>【リトルヒップホップクラス】<br>17:20〜(50分クラス)</p>
-							<p class="scheduleArea__list__txt">リズム感とノリを重視した<br class="sp">楽しいリトルヒップホップクラス！<br><br>
-対象年齢 5歳〜小学校低学年まで</p>
+							<p class="scheduleArea__list__txt">初めてでも、丁寧な指導でリズムトレーニング中心のリトルヒップホップクラス！男の子も大歓迎！<br><br>
+対象年齢 4歳〜小学校低学年まで</p>
                 <a href="http://www.vils-dkc.com/instructor/mayu-venom/" target="_blank" class="scheduleArea__list__btn">MAYU先生のプロフィールを見る</a>
 							</div>
 						</li>
@@ -139,6 +139,8 @@
 					<p class="systemArea__btnArea"><a href="http://www.vils-dkc.com/blog/?blog_category=%E5%A4%A7%E9%98%AA%E5%BF%83%E6%96%8E%E6%A9%8B" class="btn">ブログを見る</a>
 					</p>
 					<p class="systemArea__btnArea"><a href="http://www.vils-dkc.com/" class="btn">京都山科校のサイトはコチラ</a>
+					</p>
+          <p class="systemArea__btnArea"><a href="http://www.vils-dkc.com/tachibana/" class="btn">兵庫立花校のサイトはコチラ</a>
 					</p>
 					<p class="systemArea__btnArea"><a href="<?php echo home_url(); ?>/contact/" class="btn mail">お問い合わせ</a>
 					</p>
@@ -152,16 +154,15 @@
 					<h2 class="access__ttl subTtl">Access<span>アクセスマップ</span></h2>
 					<div class="access__inner">
 						<div class="access__inner__map">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.2686494917657!2d135.4955151152314!3d34.67316858044153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e7100e390541%3A0xac78fde8abaf66ab!2z44CSNTQyLTAwODYg5aSn6Ziq5bqc5aSn6Ziq5biC5Lit5aSu5Yy66KW_5b-D5paO5qmL77yR5LiB55uu77yR77yW4oiS77yXIOOCteOCtuODs-OCpuOCqOOCueODiOODk-ODqzfpmo4!5e0!3m2!1sja!2sjp!4v1555849496570!5m2!1sja!2sjp" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.4451729576267!2d135.49662831523145!3d34.66871238044278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e71236f18ff5%3A0x4ec959ee31ede5f7!2z44OA44Oz44K544K544K_44K444Kq44CMVk9YSkFQQU4gU1RVRElP44CN!5e0!3m2!1sja!2sjp!4v1574852454613!5m2!1sja!2sjp" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 						</div>
 						<div class="access__inner__add">
 							<div class="inner">
-								<h2>RO studio<br>
-              <span>アールオースタジオ</span></h2>
-								<p>住所<br> 大阪府大阪市中央区西心斎橋１丁目16-7 サザンウエストビル7階<br> TEL:06-6539-0655
+								<h2>VOX JAPAN ダンススタジオ</h2>
+								<p>住所<br>〒542-0071 大阪府大阪市中央区道頓堀２丁目４−７ プランドール道頓堀5階<br> TEL:06-6539-0655
 								</p>
-								<p>心斎橋駅・四ツ橋駅より徒歩3分!<br>
-アメリカ村内のイキナリステーキ、王将の前にあるmojoという服屋さんのビルの7階</p>
+								<p>道頓堀商店街を御堂筋から御堂筋から四ツ橋に向かって入った右手にあります。<br>
+（道頓堀ホテルの向かい、焼肉「空」の右側が入り口です。エレベーターで5Fへ）</p>
 							</div>
 						</div>
 					</div>
