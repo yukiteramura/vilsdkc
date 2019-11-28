@@ -18,9 +18,15 @@
 東部文化会館
 <h3>大阪校</h3>
 <p class="footer_adrress">
+<<<<<<< HEAD
 VOX JAPAN ダンススタジオ<br>
 大阪府大阪市中央区道頓堀2-4-7<br>
 プランドール道頓堀5F</p>
+=======
+RO studio(アールオースタジオ)<br>
+大阪府大阪市中央区西心斎橋１丁目16-7<br>
+サザンウエストビル7階</p>
+>>>>>>> f96b3cdd72adea5e8f3e650d11806ee7dce1ecf9
   <h3>兵庫立花校</h3>
 <p class="footer_adrress">尼崎市立花町2-18-1<br>
 グリーンマンションエル1階

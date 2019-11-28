@@ -1,4 +1,19 @@
 (function($){
+/*slide menu*/
+		$('#navOpen').append('<span/>').on('click',function () {
+			$(this).toggleClass('open');
+			$('#navGlobal .navGroup').slideToggle('slow');
+		});
+
+		$('#navGlobal .navInner[href^="#"]').on('click',function(){
+			smooth(this);
+			$('#navOpen').removeClass('open');
+			$('#navGlobal .navGroup').slideUp('slow');
+			return false;
+		});
+		/*slide menu*/
+
+
 	
 	$('.innerLink[href^="#"]').click(function () {
 		smooth(this);

@@ -13,8 +13,11 @@
 <?php wp_head();?>
 <!--[if lt IE 9]><script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<<<<<<< HEAD
   <!-- Global site tag (gtag.js) - Google Ads: 845182420 --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-845182420"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-845182420'); </script>
 </head>
+=======
+>>>>>>> f96b3cdd72adea5e8f3e650d11806ee7dce1ecf9
 <body>
 <div id="container">
 <header id="header">
