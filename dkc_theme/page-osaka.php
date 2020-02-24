@@ -59,11 +59,7 @@
 				</section>
 				<section class="catch">
 					<h2><img src="<?php echo get_bloginfo("template_directory") ?>/images/osaka/bana_osaka.jpg" alt="VILS DANCE KIDS CLUBビルズダンスキッズクラブ大阪校"></h2>
-<<<<<<< HEAD
 					<p><span>難波・四ツ橋・西心斎橋から歩いてすぐ！<br>大阪校がOPENしました!!</span><br>初めてさんばかりなので、初めてダンスをする子にも入りやすいクラスです。<br>
-=======
-					<p><span>心斎橋駅・四ツ橋駅より徒歩3分!<br>大阪校がOPENしました!!</span><br>初めてさんばかりなので、初めてダンスをする子にも入りやすいクラスです。<br>
->>>>>>> f96b3cdd72adea5e8f3e650d11806ee7dce1ecf9
 現在は幼児クラスを展開中!!<br>随時無料体験レッスン実施中！<br>
 予約無しでOK!<br>
 当日は動きやすい服装と靴をご持参ください(^^)</p>

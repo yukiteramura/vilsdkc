@@ -13,17 +13,16 @@
 <section class="contents_inner_box">
 <h2 class="contents_h2"><img alt="a" src="<?php echo get_bloginfo("template_directory") ?>/images/pc/h2_contact.jpg"></h2>
 <div class="content page_content">
-<p class="contact_desc">全ての項目が必須項目となっておりますので記入漏れのないようお気をつけください。</p>
-<?php if(have_posts()):while(have_posts()):the_post(); ?>
-<?php the_content(); ?>
-<?php endwhile;endif; ?>
-<div class="sp_tell_area">
-<p class="sp_tell_contact">お電話番号でのお問い合わせも行っております。お気軽にお問い合わせください。</p>
-<!--
-<p>年中無休</p>
-<p>受付時間 10：00～19：00</p>-->
-<p class="tap">タップすると電話がかかります。</p>
-<p class="sp_tell">06-6539-0655</p>
+<p class="contact_desc">お問い合わせいただきありがとうございました。<br>
+お問い合わせを受け付けました。<br>
+<br>
+折り返し、担当者よりご連絡いたしますので、<br>
+恐れ入りますが、しばらくお待ちください。<br>
+<br>
+なお、しばらくたっても返信、返答がない場合は、<br>
+お客様によりご入力いただいたメールアドレスに誤りがある場合がございます。<br>
+その際は、お手数ですが再度送信いただくか、<br>
+お電話（ <a href="tel:06-6539-0655">06-6539-0655</a> ）にてご連絡いただけますと幸いです。</p>
 </div>
 </section>
 <?php include_once("sp_contents.php");?>
@@ -36,18 +35,17 @@
 <section class="contents_inner_box main_contents">
 <h2 class="contents_h2"><img src="<?php echo get_bloginfo("template_directory") ?>/images/pc/h2_contact.jpg"></h2>
 <div class="content">
-<p class="contact_desc">全ての項目が必須項目となっておりますので記入漏れのないようお気をつけください。</p>
-<?php if(have_posts()):while(have_posts()):the_post(); ?>
-<?php the_content(); ?>
-<?php endwhile;endif; ?>
-<div class="sp_tell_area">
-<p class="sp_tell_contact">お電話番号でのお問い合わせも行っております。お気軽にお問い合わせください。</p>
-<!--<p>年中無休</p>
-<p>受付時間 10：00～19：00</p>-->
-<p class="pc_tell">06-6539-0655</p>
+<p class="contact_desc">お問い合わせいただきありがとうございました。<br>
+お問い合わせを受け付けました。<br>
+<br>
+折り返し、担当者よりご連絡いたしますので、<br>
+恐れ入りますが、しばらくお待ちください。<br>
+<br>
+なお、しばらくたっても返信、返答がない場合は、<br>
+お客様によりご入力いただいたメールアドレスに誤りがある場合がございます。<br>
+その際は、お手数ですが再度送信いただくか、<br>
+お電話（ <a href="tel:06-6539-0655">06-6539-0655</a> ）にてご連絡いただけますと幸いです。</p>
 </div>
-</div>
-
 </section>
 <?php include_once("new_info.php");?>
 <?php include_once("topicks.php");?>
@@ -68,5 +66,5 @@ img.style.display = "inline-block";
 }
 }
 </script>
-
+<!-- Event snippet for お問い合わせ完了 conversion page --> <script> gtag('event', 'conversion', {'send_to': 'AW-845182420/1qT9CKbx9bQBENTrgZMD'}); </script>
 </html>

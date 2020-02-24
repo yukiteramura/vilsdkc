@@ -135,6 +135,20 @@
                 <p><a href="http://www.vils-dkc.com/instructor/mayu-venom/" target="_blank" class="scheduleArea__list__btn">MAYU先生のプロフィールを見る</a></p>
 							</div>
 						</li>
+            <li class="new">
+							<p class="scheduleArea__list__fig"><a href="http://www.vils-dkc.com/instructor/yuuki/" target="_blank"><img src="<?php echo get_bloginfo("template_directory") ?>/images/tachibana/img_yu-ki.png" alt="YUUKI"></a>
+							</p>
+							<div>
+                <p class="scheduleArea__list__name">インストラクター：YUUKI先生</p>
+							<p class="scheduleArea__list__time">毎週金曜日<br>【小学生ガールズヒップホップクラス】<br>17:30〜18:20</p>
+							<p class="scheduleArea__list__txt">女の子ならではのノリを重視したヒップホップクラス！<br>
+4月から無料体験レッスン開催中！<br>
+ぜひ一度体験にお越し下さい。<br>
+</p>
+                <p>対象年齢 小学生</p>
+                <p><a href="http://www.vils-dkc.com/instructor/yuuki/" target="_blank" class="scheduleArea__list__btn">YUUKI先生のプロフィールを見る</a></p>
+							</div>
+						</li>
 					</ul>
 				</section>
 				<section class="systemArea fadein" id="system">

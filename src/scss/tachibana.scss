@@ -529,8 +529,22 @@ a{
 				}
 			}
 			&+li{
-				margin-top: 40px;
+				margin-top: 60px;
 			}
+      &.new{
+        .scheduleArea__list__fig{
+          position: relative;
+          &:before{
+            content: "";
+            background: url("../images/tachibana/new.svg") center center no-repeat;
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top: -30px;
+            left: -30px;
+          }
+        }
+      }
 		}
 	}
 }
